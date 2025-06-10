@@ -1,0 +1,448 @@
+// Import variables first
+@import 'variables';
+
+
+// Global styles
+body {
+  font-family: $font-family-base;
+  color: $text-primary;
+  overflow-x: hidden;
+  line-height: $line-height-base;
+}
+
+// Navbar styling
+.navbar {
+  background-color: $navy;
+  box-shadow: 0 2px 10px rgba($dark, 0.1);
+  padding: 1rem 0;
+  
+  &.scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 5px 20px rgba($dark, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    color: $white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+// Hero section
+.hero {
+  min-height: 500px;
+  padding-top: 5rem;
+  background: linear-gradient(90deg, $teal 0%, $aurora-blue 60%, $aurora-purple 100%);
+  color: $white;
+  text-align: center;
+  
+  h1 {
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white !important;
+    text-shadow: 0 2px 8px rgba($navy, 0.10);
+  }
+  
+  .btn-hero-cta {
+    background: $white;
+    color: $navy;
+    font-weight: 700;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 2px 8px rgba($primary, 0.08);
+    border: none;
+    
+    &:hover, &:focus {
+      background: $teal;
+      color: $white;
+    }
+  }
+}
+
+// How It Works
+.how-it-works {
+  background-color: $white;
+  .process-card {
+    background: $white;
+    padding: 2rem;
+    border-radius: $border-radius-lg;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba($navy, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-10px);
+    }
+    
+    .process-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      background: linear-gradient(135deg, $teal, $aurora-blue);
+      color: $white;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+    }
+    
+    h3 {
+      color: $navy;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    p {
+      color: $text-secondary;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Why Us
+.why-us {
+  .bg-gradient-light {
+    background: linear-gradient(135deg, $light-gray 0%, $white 100%);
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    
+    .feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, $teal, $aurora-blue);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      color: $white;
+      font-size: 1.25rem;
+    }
+    
+    .feature-content {
+      h4 {
+        color: $navy;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      
+      p {
+        color: $text-secondary;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  img {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 20px 40px rgba($navy, 0.1);
+  }
+}
+
+// Pricing section
+.pricing {
+  background-color: $white;
+  
+  .pricing-card {
+    background: $white;
+    border-radius: $border-radius-lg;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid $border-color;
+    position: relative;
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba($navy, 0.1);
+    }
+    
+    &.featured {
+      border: 2px solid $primary;
+      box-shadow: 0 10px 30px rgba($primary, 0.1);
+      
+      .popular-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: $primary;
+        color: $white;
+        padding: 0.25rem 1rem;
+        border-radius: $border-radius;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h3 {
+      color: $navy;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .price {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $navy;
+      
+      .currency {
+        font-size: 1.5rem;
+        position: relative;
+        top: -0.75rem;
+      }
+      
+      .period {
+        font-size: 1rem;
+        color: $text-secondary;
+        font-weight: 400;
+      }
+    }
+  }
+  
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    
+    li {
+      margin-bottom: 1rem;
+      color: $text-secondary;
+      
+      i {
+        color: $primary;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $bg-dark;
+  color: $white;
+  
+  img {
+    filter: brightness(0) invert(1);
+  }
+  
+  h5 {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+  
+  a {
+    color: rgba($white, 0.8);
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    
+    &:hover {
+      color: $white;
+      transform: translateX(5px);
+    }
+  }
+  
+  .social-icons {
+    a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      background: rgba($white, 0.1);
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: $primary;
+        transform: translateY(-3px);
+      }
+    }
+  }
+  
+  ul {
+    li {
+      margin-bottom: 0.75rem;
+      
+      a {
+        color: rgba($white, 0.7);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          color: $white;
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+  
+  hr {
+    border-color: rgba($white, 0.1);
+    margin: 2rem 0 1.5rem;
+  }
+}
+
+// Buttons
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: $border-radius;
+  transition: 0.2s;
+  box-shadow: 0 2px 5px rgba($dark, 0.1);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba($dark, 0.15);
+  }
+  
+  &:active {
+    transform: translateY(1px);
+  }
+  
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    
+    &:hover {
+      background-color: darken($primary, 5%);
+      border-color: darken($primary, 5%);
+    }
+  }
+  
+  &.btn-outline-secondary {
+    color: $text-primary;
+    border-color: $border-color;
+    
+    &:hover {
+      background-color: $light;
+      color: $primary;
+    }
+  }
+}
+
+// Animations
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// Utility classes
+.text-primary {
+  color: $primary !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-light {
+  background-color: $bg-light !important;
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Additional helper classes
+.section-padding {
+  padding: 5rem 0;
+}
+
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba($dark, .075);
+}
+
+.shadow-md {
+  box-shadow: 0 .5rem 1rem rgba($dark, .15);
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba($dark, .175);
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $light;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary, 10%);
+}
+
+// Responsive adjustments
+@media (max-width: map-get($breakpoints, lg)) {
+  .hero {
+    min-height: 300px;
+    padding: 6rem 0 3rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: map-get($breakpoints, md)) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+}

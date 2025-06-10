@@ -1,0 +1,54 @@
+// Brand Colors
+$navy: #1A2E4C;                // Navy Blue (Header, Footer, Headings)
+$teal: #2BBFBA;                // Northern Teal (Accent, CTA)
+$aurora-blue: #3A8DFF;         // Aurora Blue (Gradient, Accent)
+$aurora-purple: #7B61FF;       // Aurora Purple (Gradient, Secondary Button)
+$white: #FFFFFF;               // Pure White
+$light-gray: #F5F7FA;          // Light Gray (Backgrounds)
+$dark-gray: #333333;           // Body Text
+
+// Bootstrap-like aliases for compatibility
+$primary: $teal;
+$secondary: $aurora-purple;
+$success: #28a745;
+$info: $aurora-blue;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: $light-gray;
+$dark: $navy;
+
+// Backgrounds
+$bg-light: $light-gray;
+$bg-dark: $navy;
+
+// Text
+$text-primary: $navy;
+$text-secondary: $dark-gray;
+$text-muted: #868e96;
+
+// UI
+$border-color: #e3e8ee;
+$shadow-color: rgba(26, 46, 76, 0.07);
+
+// Typography
+$font-family-base: 'Satoshi', 'Inter', 'Segoe UI', Arial, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Spacing
+$spacer: 1rem;
+
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-sm: 0.375rem;
+$border-radius-lg: 1rem;
