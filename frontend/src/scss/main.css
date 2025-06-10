@@ -15,7 +15,16 @@ body {
   box-shadow: 0 5px 20px rgba(26, 46, 76, 0.1);
 }
 .navbar .navbar-brand {
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.navbar .navbar-brand img {
+  height: 80px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -40px !important;
 }
 .navbar .nav-link {
   color: #FFFFFF !important;
@@ -93,6 +102,70 @@ body {
   margin-bottom: 0;
 }
 
+.resume-upload {
+  background-color: #F5F7FA;
+}
+.resume-upload .upload-card {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(26, 46, 76, 0.1);
+}
+.resume-upload .resume-drop-area {
+  border: 2px dashed #e3e8ee;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: rgba(245, 247, 250, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.resume-upload .resume-drop-area:hover {
+  border-color: #2BBFBA;
+  background-color: rgba(43, 191, 186, 0.05);
+}
+.resume-upload .resume-drop-area .upload-icon {
+  font-size: 2.5rem;
+  color: #2BBFBA;
+  margin-bottom: 1rem;
+}
+.resume-upload .resume-drop-area h4 {
+  font-weight: 600;
+  color: #1A2E4C;
+  margin-bottom: 0.5rem;
+}
+.resume-upload .generate-btn {
+  background: linear-gradient(135deg, #2BBFBA 0%, #3A8DFF 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(43, 191, 186, 0.2);
+}
+.resume-upload .generate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(43, 191, 186, 0.3);
+}
+.resume-upload .generate-btn:active {
+  transform: translateY(1px);
+}
+.resume-upload .form-label {
+  color: #1A2E4C;
+}
+.resume-upload .input-group-text {
+  background-color: #F5F7FA;
+  border-color: #e3e8ee;
+  color: #2BBFBA;
+}
+.resume-upload .form-control {
+  border-color: #e3e8ee;
+}
+.resume-upload .form-control:focus {
+  border-color: #2BBFBA;
+  box-shadow: 0 0 0 0.25rem rgba(43, 191, 186, 0.25);
+}
+
 .why-us .bg-gradient-light {
   background: linear-gradient(135deg, #F5F7FA 0%, #FFFFFF 100%);
 }
@@ -140,6 +213,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e3e8ee;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .pricing .pricing-card:hover {
   transform: translateY(-10px);
@@ -188,6 +263,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem;
+  flex: 1;
 }
 .pricing .pricing-features li {
   margin-bottom: 1rem;
@@ -196,6 +272,46 @@ body {
 .pricing .pricing-features li i {
   color: #2BBFBA;
   margin-right: 0.5rem;
+}
+.pricing .pricing-btn-wrapper {
+  margin-top: auto;
+}
+
+.testimonials .testimonial-card {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(26, 46, 76, 0.1);
+}
+.testimonials .testimonial-card:hover {
+  transform: translateY(-10px);
+}
+.testimonials .testimonial-content {
+  text-align: left;
+}
+.testimonials .testimonial-rating {
+  color: #2BBFBA;
+  font-size: 1.1rem;
+}
+.testimonials .testimonial-rating i {
+  margin-right: 0.25rem;
+}
+.testimonials .testimonial-text {
+  font-size: 1.1rem;
+  color: #1A2E4C;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.testimonials .testimonial-author h5 {
+  color: #1A2E4C;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.testimonials .testimonial-author p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 .footer {

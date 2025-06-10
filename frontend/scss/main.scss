@@ -22,15 +22,7 @@ body {
   }
   
   .navbar-brand {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    img {
-      height: 80px;
-      width: 200px; 
-      object-fit: cover;
-      margin-top: -40px !important;
-    }
+    font-weight: 600;
   }
   
   .nav-link {
@@ -121,83 +113,6 @@ body {
   }
 }
 
-// Resume Upload Section
-.resume-upload {
-  background-color: $bg-light;
-
-  .upload-card {
-    background: $white;
-    border-radius: $border-radius-lg;
-    padding: 3rem;
-    box-shadow: 0 10px 30px rgba($navy, 0.1);
-  }
-
-  .resume-drop-area {
-    border: 2px dashed $border-color;
-    border-radius: $border-radius;
-    padding: 2.5rem;
-    text-align: center;
-    background-color: rgba($light, 0.5);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    
-    &:hover {
-      border-color: $primary;
-      background-color: rgba($primary, 0.05);
-    }
-    
-    .upload-icon {
-      font-size: 2.5rem;
-      color: $primary;
-      margin-bottom: 1rem;
-    }
-    
-    h4 {
-      font-weight: 600;
-      color: $navy;
-      margin-bottom: 0.5rem;
-    }
-  }
-  
-  .generate-btn {
-    background: linear-gradient(135deg, $teal 0%, $aurora-blue 100%);
-    color: $white;
-    font-weight: 600;
-    padding: 0.75rem 2rem;
-    border: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba($primary, 0.2);
-    
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba($primary, 0.3);
-    }
-    
-    &:active {
-      transform: translateY(1px);
-    }
-  }
-  
-  .form-label {
-    color: $navy;
-  }
-  
-  .input-group-text {
-    background-color: $light;
-    border-color: $border-color;
-    color: $primary;
-  }
-  
-  .form-control {
-    border-color: $border-color;
-    
-    &:focus {
-      border-color: $primary;
-      box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
-    }
-  }
-}
-
 // Why Us
 .why-us {
   .bg-gradient-light {
@@ -256,8 +171,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid $border-color;
     position: relative;
-    display: flex;
-    flex-direction: column;
     
     &:hover {
       transform: translateY(-10px);
@@ -315,7 +228,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 0 2rem;
-    flex: 1; // This makes the feature list take up all available space
     
     li {
       margin-bottom: 1rem;
@@ -325,60 +237,6 @@ body {
         color: $primary;
         margin-right: 0.5rem;
       }
-    }
-  }
-  
-  .pricing-btn-wrapper {
-    margin-top: auto; // Pushes the button to the bottom
-  }
-}
-
-// Testimonials
-.testimonials {
-  .testimonial-card {
-    background: $white;
-    border-radius: $border-radius-lg;
-    padding: 2rem;
-    height: 100%;
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 30px rgba($navy, 0.1);
-    
-    
-    &:hover {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .testimonial-content {
-    text-align: left;
-  }
-  
-  .testimonial-rating {
-    color: $teal;
-    font-size: 1.1rem;
-    
-    i {
-      margin-right: 0.25rem;
-    }
-  }
-  
-  .testimonial-text {
-    font-size: 1.1rem;
-    color: $text-primary;
-    margin-bottom: 1.5rem;
-    font-style: italic;
-  }
-  
-  .testimonial-author {
-    h5 {
-      color: $navy;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-    
-    p {
-      font-size: 0.9rem;
-      margin-bottom: 0;
     }
   }
 }
